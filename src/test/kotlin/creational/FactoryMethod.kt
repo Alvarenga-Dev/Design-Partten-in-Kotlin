@@ -18,6 +18,7 @@ object CurrencyFactory {
             is Greece -> Currency("EUR")
             is Brazil -> Currency("BRL")
             is Country.Canada -> Currency("CAD")
+            else -> { Currency("ERROR") }
         }
 }
 
